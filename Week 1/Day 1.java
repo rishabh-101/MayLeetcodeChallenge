@@ -22,6 +22,10 @@ Then 4 is the first bad version.
 /* The isBadVersion API is defined in the parent class VersionControl.
       boolean isBadVersion(int version); */
 
+/* Time complexity  : O(logn)
+   Space complexity : O(1)
+*/
+
 public class Solution extends VersionControl {
     public int firstBadVersion(int n) {
         int low = 1, high = n, ans = -1;
